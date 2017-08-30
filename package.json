@@ -1,0 +1,23 @@
+{
+  "name": "MeteorGifMakerTest",
+  "version": "1.0.0",
+  "description": "Meteor Gif Maker",
+  "main": "index.js",
+  "dependencies": {
+    "gifshot": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmorland/meteor-gif-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmorland/meteor-gif-maker/issues"
+  },
+  "homepage": "https://github.com/kmorland/meteor-gif-maker"
+}
