@@ -1,0 +1,17 @@
+<template name="DragDropComponent">
+    <div class="drop-zone">
+        <div class="img-responsive upload" >
+            <i class="fa fa-upload fa-5x" aria-hidden="true"></i>
+            <input type="file" id="fileUpload" style="display:none;">
+            <p>Upload File(s) <br />or<br /> Drag and Drop Images</p>
+        </div>
+        <div style="text-align: center;">
+            {{#each images}}
+                <img src="{{this}}" class="preview" />
+            {{/each}}
+        </div>
+        <div style="text-align: center;">
+            <span>{{count}} of 5</span>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,6 @@
+<template name="InputUploadComponent">
+    <label class="btn btn-default">
+        <input type=file hidden>
+    </label>
+    {{#if isImagePreview}}<img src="{{imagePreview}}" class="preview" />{{/if}}
+</template>

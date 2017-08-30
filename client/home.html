@@ -1,0 +1,48 @@
+<body>
+<div class="container">
+    <header>
+        <h1>Gif Maker Test</h1>
+    </header>
+    {{> HomeComponent}}
+</div>
+</body>
+
+<template name="HomeComponent">
+    <div>
+        <div>
+            {{> DragDropComponent callback = dragDropCallback }}
+        </div>
+        <!--<div>
+            1.&nbsp;{{> InputUploadComponent index = 1 callback = inputCallback }}
+        </div>
+        <div>
+            2.&nbsp;{{> InputUploadComponent index = 2 callback = inputCallback }}
+        </div>
+        <div>
+            3.&nbsp;{{> InputUploadComponent index = 3 callback = inputCallback }}
+        </div>
+        <div>
+            4.&nbsp;{{> InputUploadComponent index = 4 callback = inputCallback }}
+        </div>
+        <div>
+            5.&nbsp;{{> InputUploadComponent index = 5 callback = inputCallback }}
+        </div>
+        <br>-->
+        <br />
+        
+        {{#if isImagesValid}}
+            <div class="form-group">
+                <label for="intervalInput">Interval</label>
+                <input type="number" placeholder="milliseconds" />
+                <small class="form-text text-muted">Enter interval in milliseconds (seconds times 1000).</small>
+            </div>
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+        {{/if}}
+        
+
+        <div class="gif-preview">
+            <img src="{{gifPreview}}" />
+        </div>
+
+    </div>
+</template>
