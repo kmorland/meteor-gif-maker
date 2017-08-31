@@ -36,7 +36,10 @@
                 <input type="number" placeholder="milliseconds" />
                 <small class="form-text text-muted">Enter interval in milliseconds (seconds times 1000).</small>
             </div>
-            <button type="submit" class="btn btn-primary submit">Submit</button>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary submit">Submit</button>
+                {{#if gifPreview}}<a download="gif-maker-file-download.gif" class="btn btn-secondary" href="{{gifPreview}}">Download</a>{{/if}}
+            </div>
         {{/if}}
         
 
